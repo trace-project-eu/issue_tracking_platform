@@ -1,0 +1,41 @@
+---
+name: Request Whitelisting a Source IP Address/Subnet
+description: Request whitelisting your Source IP Address/Subnet to access the deployment environments of the platform. A system administrator will soon contact you.
+title: "Whitelist Source IP Address/Subnet"
+labels: cicd
+assignees: themisAnagno
+body:
+  - type: input
+    id: partner
+    attributes:
+      label: Organisation
+      description: What is your orgnanisation?
+      placeholder: "INTRA"
+    validations:
+      required: true
+  - type: input
+    id: Name
+    attributes:
+      description: "Your Name"
+      label: "Name"
+      placeholder: "Example: Themistoklis Anagnostopoulos"
+    validations:
+      required: true
+  - type: input
+    id: email
+    attributes:
+      description: "Your email address"
+      label: "Email"
+      placeholder: "Example: tanangos@netcompany.com"
+    validations:
+      required: true
+  - type: input
+    id: sourceIP
+    attributes:
+      description: "Your source IP address/subnet"
+      label: "sourceIP"
+      placeholder: "Example: 10.10.10.0/24"
+    validations:
+      required: true
+---
+

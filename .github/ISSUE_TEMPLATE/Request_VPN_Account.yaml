@@ -1,0 +1,33 @@
+---
+name: Request VPN Account
+description: Request a new VPN account to access the deployment environments of the platform. A system administrator will soon contact you.
+title: "Request VPN Account"
+labels: cicd
+assignees: themisAnagno
+body:
+  - type: input
+    id: partner
+    attributes:
+      label: Organisation
+      description: What is your orgnanisation?
+      placeholder: "INTRA"
+    validations:
+      required: true
+  - type: input
+    id: Name
+    attributes:
+      description: "Your Name"
+      label: "Name"
+      placeholder: "Example: Themistoklis Anagnostopoulos"
+    validations:
+      required: true
+  - type: input
+    id: email
+    attributes:
+      description: "Your email address"
+      label: "Email"
+      placeholder: "Example: tanangos@netcompany.com"
+    validations:
+      required: true
+---
+

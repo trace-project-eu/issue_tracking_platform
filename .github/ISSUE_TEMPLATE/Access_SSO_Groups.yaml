@@ -1,0 +1,41 @@
+---
+name: Access SSO Groups
+description: Request adding your SSO account to the necessary groups to access the project's CI/CD Services. A system administrator will soon contact you.
+title: "Access SSO Groups"
+labels: cicd
+assignees: themisAnagno
+body:
+  - type: input
+    id: partner
+    attributes:
+      label: Organisation
+      description: What is your orgnanisation?
+      placeholder: "INTRA"
+    validations:
+      required: true
+  - type: input
+    id: Name
+    attributes:
+      description: "Your Name"
+      label: "Name"
+      placeholder: "Example: Themistoklis Anagnostopoulos"
+    validations:
+      required: true
+  - type: input
+    id: email
+    attributes:
+      description: "Your email address"
+      label: "Email"
+      placeholder: "Example: tanangos@netcompany.com"
+    validations:
+      required: true
+  - type: input
+    id: gh_account
+    attributes:
+      description: "Your GitHub account"
+      label: "GH"
+      placeholder: "themisAnagno"
+    validations:
+      required: true
+---
+
