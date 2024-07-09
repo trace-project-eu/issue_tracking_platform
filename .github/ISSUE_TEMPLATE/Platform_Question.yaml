@@ -1,0 +1,32 @@
+---
+name: Platform Question
+description: Raise a question regarding the TRACE Cloud Platfomr. A system administrator will soon contact you.
+title: "Platform Question"
+labels: question
+assignees: themisAnagno
+body:
+  - type: input
+    id: Name
+    attributes:
+      description: "Your Name"
+      label: "Name"
+      placeholder: "Example: Themistoklis Anagnostopoulos"
+    validations:
+      required: true
+  - type: input
+    id: email
+    attributes:
+      description: "Your email address"
+      label: "Email"
+      placeholder: "Example: tanangos@netcompany.com"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      description: "Question"
+      label: "question"
+    validations:
+      required: true
+---
+
